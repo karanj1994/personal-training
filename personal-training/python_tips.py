@@ -2,7 +2,6 @@ import os
 import json
 import argparse
 
-
 my_file = os.popen("maprcli table region list -path /datalake/other/polarisprovider/polarisdatamovement/blue/perf/data/hcp_region -json")
 with my_file as json_data:
     d = json.load(my_file)
